@@ -109,5 +109,5 @@ for(let word of str){
     }
 }
 p.innerHTML = newStr.trim();
-//1
+
 
