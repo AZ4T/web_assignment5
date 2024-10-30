@@ -178,6 +178,40 @@ div_ex10.innerHTML = newText_ex10;
 
 
 //exercise 11
+function sphere() {
+    let radius = document.getElementById("ex11Radius").value;
+    document.getElementById("ex11Result").textContent = 4 / 3 * Math.PI * radius * radius * radius;
+}
+
+//exercise 12
+function cylinder() {
+    let radius = document.getElementById("ex12Radius").value;
+    let height = document.getElementById("ex12Height").value;
+    document.getElementById("ex12Result").textContent = Math.PI * radius * radius * height;
+}
+
+//exercise 13
+function cone() {
+    let radius = document.getElementById("ex13Radius").value;
+    let height = document.getElementById("ex13Height").value;
+    document.getElementById("ex13Result").textContent = 1 / 3 * Math.PI * radius * radius * height;
+}
+
+//exercise 14
+function prism() {
+    let a = document.getElementById("ex14A").value;
+    let b = document.getElementById("ex14B").value;
+    let height = document.getElementById("ex14Height").value;
+
+    document.getElementById("ex14Result").textContent = a * b * height;
+}
+
+//exercise 15
+function triangle() {
+    let base = document.getElementById("ex15Base").value;
+    let height = document.getElementById("ex15Height").value;
+    document.getElementById("ex15Result").textContent = 1 / 2 * base * height;
+}
 
 
 
