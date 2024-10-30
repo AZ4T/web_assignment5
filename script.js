@@ -143,7 +143,6 @@ for (char of text_ex8) {
         newText_ex8 += char;
     }
 }
-
 div_ex8.innerHTML = newText_ex8;
 
 
@@ -153,6 +152,7 @@ div_ex8.innerHTML = newText_ex8;
 // let div_ex9 = document.getElementById("ex9");
 // let text_ex9 = div_ex9.textContent.split(" ");
 // let numberOfWords = 0;
+
 // for (word of text_ex9) {
 //     numberOfWords++;
 // }
@@ -164,6 +164,7 @@ div_ex8.innerHTML = newText_ex8;
 let div_ex10 = document.getElementById("ex10");
 let text_ex10 = div_ex10.textContent.split(" ");
 let newText_ex10 = "";
+
 for (word of text_ex10) {
     if (word[0].toLowerCase() === "a") {
         newText_ex10 += `<i>${word} </i>`;
@@ -180,6 +181,7 @@ div_ex10.innerHTML = newText_ex10;
 //exercise 11
 function sphere() {
     let radius = document.getElementById("ex11Radius").value;
+
     document.getElementById("ex11Result").textContent = 4 / 3 * Math.PI * radius * radius * radius;
 }
 
@@ -187,6 +189,7 @@ function sphere() {
 function cylinder() {
     let radius = document.getElementById("ex12Radius").value;
     let height = document.getElementById("ex12Height").value;
+
     document.getElementById("ex12Result").textContent = Math.PI * radius * radius * height;
 }
 
@@ -194,6 +197,7 @@ function cylinder() {
 function cone() {
     let radius = document.getElementById("ex13Radius").value;
     let height = document.getElementById("ex13Height").value;
+
     document.getElementById("ex13Result").textContent = 1 / 3 * Math.PI * radius * radius * height;
 }
 
@@ -210,8 +214,10 @@ function prism() {
 function triangle() {
     let base = document.getElementById("ex15Base").value;
     let height = document.getElementById("ex15Height").value;
+
     document.getElementById("ex15Result").textContent = 1 / 2 * base * height;
 }
 
 
 
+//exercise 16
