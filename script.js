@@ -111,3 +111,24 @@ for(let word of str){
 p.innerHTML = newStr.trim();
 
 
+
+
+//exercise 7
+let div = document.querySelector("div");
+let text = div.textContent;
+let newText = "";
+
+for (let char of text) {
+    if (char == "?") {
+        char = "*";
+    } else if (char == "!") {
+        char = "@";
+    }
+    newText += char;
+}
+div.textContent = newText;
+
+
+
+
+
