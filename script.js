@@ -114,21 +114,70 @@ p.innerHTML = newStr.trim();
 
 
 //exercise 7
-let div = document.querySelector("div");
-let text = div.textContent;
-let newText = "";
+let div_ex7 = document.getElementById("ex7");
+let text_ex7 = div_ex7.textContent;
+let newText_ex7 = "";
 
-for (let char of text) {
+for (let char of text_ex7) {
     if (char == "?") {
         char = "*";
     } else if (char == "!") {
         char = "@";
     }
-    newText += char;
+    newText_ex7 += char;
 }
-div.textContent = newText;
+div_ex7.textContent = newText_ex7;
 
 
+
+//exercise 8
+let div_ex8 = document.getElementById("ex8");
+let text_ex8 = div_ex8.textContent;
+let newText_ex8 = "";
+
+for (char of text_ex8) {
+    if (char == "?" || char == "!" || char == ".") {
+        newText_ex8 += char;
+        newText_ex8 += "<br>";
+    } else {
+        newText_ex8 += char;
+    }
+}
+
+div_ex8.innerHTML = newText_ex8;
+
+
+
+
+//exercise 9
+// let div_ex9 = document.getElementById("ex9");
+// let text_ex9 = div_ex9.textContent.split(" ");
+// let numberOfWords = 0;
+// for (word of text_ex9) {
+//     numberOfWords++;
+// }
+// alert(numberOfWords);
+
+
+
+//exercise 10
+let div_ex10 = document.getElementById("ex10");
+let text_ex10 = div_ex10.textContent.split(" ");
+let newText_ex10 = "";
+for (word of text_ex10) {
+    if (word[0].toLowerCase() === "a") {
+        newText_ex10 += `<i>${word} </i>`;
+    } else if (word[word.length-1].toLowerCase() === "y"){
+        newText_ex10 += `<u>${word} </u>`
+    } else {
+        newText_ex10 += word + " ";
+    }
+}
+newText_ex10 = newText_ex10.trim();
+div_ex10.innerHTML = newText_ex10;
+
+
+//exercise 11
 
 
 
